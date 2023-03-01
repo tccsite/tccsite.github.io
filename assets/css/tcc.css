@@ -1,0 +1,14 @@
+.html .body {
+    font-family: Karla,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #717b86;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+.authorbox .author-thumb {
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #00d9b1;
+    padding: 2px;
+}
