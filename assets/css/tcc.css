@@ -5,7 +5,7 @@ html body {
         color: #717b86;
         line-height: 1.6;
         font-size: 18px;
-    }
+}
 .authorbox .author-thumb {
     width: 70px;
     border-radius: 50%;
@@ -17,6 +17,11 @@ h1 h2 h3 {
 }
 a.home-anchor {
     color: rgb(149,153,156);
+}
+.script-text {
+        color: #717b86;
+        line-height: 1.6;
+        font-size: 16px;
 }
 
 
