@@ -44,25 +44,67 @@
     </nav>
 
 
-        <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+        <header class="masthead" style="background-image:url('assets/img/post-bg.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <div class="site-heading">
-                        <h1>About Us</h1><span class="subheading">This is who we are</span></div>
+                        <h1>Contact Us</h1><span class="subheading">Report an issue or request</span></div>
                 </div>
             </div>
         </div>
     </header>
     <div class="container">
+       
         <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+                <p>This site is the work in progress. Our team is contunue to make improvements, 
+                    and we appologise for any inconviniences. If you do see some issues with this site 
+                    please report the issue details in the form on this page.
+                </p>
             </div>
         </div>
+    
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: Please add the following <FORM> element to your page.             -->
+        <!--  ----------------------------------------------------------------------  -->
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="orgid" value="00DB0000000Xwsl">
+            <input type=hidden name="retURL" value="https://tccsite.github.io/">
+            
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail" value="iandrosov73@gmail.com">   -->
+            <!--  ----------------------------------------------------------------------  -->
+            <h3>Let us know</h3>
+            <div class="form-group">
+                <label for="name">Contact Name</label>
+                <input  id="name" maxlength="80" name="name" size="20" type="text" class="form-control" />
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input  id="subject" maxlength="80" name="subject" size="20" type="text" class="form-control" /><br>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea name="description" class="form-control"></textarea><br>
+            </div>
+            <input type="hidden"  id="external" name="external" value="1" /><br>
+            
+            <!--<input type="submit" name="submit">-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
     </div>
     <hr>
 
