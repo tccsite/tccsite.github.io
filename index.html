@@ -28,23 +28,22 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="leadership.html">Leadership</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="locations.html">Locations</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="locations.html">Locations</a></li> -->
                     <li class="nav-item" role="presentation"><a class="nav-link" href="events.html">Events</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="services.html">Online Services</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
-                <!--
-                <select class="selectpicker" data-width="fit">
-                    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-                    <option  data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
+                
+                <select class="selectpicker" data-width="fit" onchange=switchLanguage(this.value)>
+                    <option value="/" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                    <option value=" /ja/" data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
                 </select>
-                -->
         </div>
         </div>
     </nav>
 
 
-        <header class="masthead" style="background-image:url('assets/img/bridge-awaji-right.jpg');">
+        <header class="masthead" style="background-image:url('assets/img/takamasu-city.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -66,12 +65,87 @@
 
     <div class="container">
         <div class="card-deck">
+             
+            <div class="card" >
+                <img class="card-img-top" src="assets/img/mure-chapel.png" alt="Mure International Chapel">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Mure International Chapel</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">541 Murechohara, Takamatsu, Kagawa 761-0123
+                    <br/>
+                    Phone: 0877777777
+                  </p>
+                  
+
+                  <div class="mt-auto">
+                    <a href="https://maps.app.goo.gl/Jhxym5bmGCeJTgfq5" class="btn btn-primary">Learn more</a>
+                  </div>
+                </div>
+            </div>
+
+             
+            <div class="card" >
+                <img class="card-img-top" src="assets/img/center-church.png" alt="Christian Center">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Christian Center</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">2-chome-5-15 Tokiwacho, Takamatsu, Kagawa 760-0054,
+                    <br/>
+                    Phone: 0878342870
+                  </p>
+                  
+
+                  <div class="mt-auto">
+                    <a href="https://goo.gl/maps/ErcUk4JPFZZiXDvq7" class="btn btn-primary">Learn more</a>
+                  </div>
+                </div>
+            </div>
+
+             
+            <div class="card" >
+                <img class="card-img-top" src="assets/img/seto-uchi-chapel.png" alt="Setouchi Chapel">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Setouchi Chapel</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">20-15 Setouchicho, Takamatsu, Kagawa 760-0012
+                    <br/>
+                    Phone: 0878359189
+                  </p>
+                  
+
+                  <div class="mt-auto">
+                    <a href="https://maps.app.goo.gl/v6siL37VoYorKzPg7" class="btn btn-primary">Learn more</a>
+                  </div>
+                </div>
+            </div>
+
+             
+            <div class="card" >
+                <img class="card-img-top" src="assets/img/ayagawa.png" alt="Ayagawa Christ Church">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Ayagawa Christ Church</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">2110 Hatada, Ayagawa, Ayauta District, Kagawa 761-2101
+                    <br/>
+                    Phone: 0878770433
+                  </p>
+                  
+
+                  <div class="mt-auto">
+                    <a href="https://maps.app.goo.gl/GnxAoGavyQ9kjysC6" class="btn btn-primary">Learn more</a>
+                  </div>
+                </div>
+            </div>
+
+            
+        
+<!--
             <div class="card" >
                 <img class="card-img-top" src="assets/img/mure-chapel.png" alt="Mure Chapel">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title">Mure International Chapel</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 16:00</h6>
-                  <p class="card-text">541 Murechohara, Takamatsu, Kagawa 761-0123, 
+                  <p class="card-text">541 Murechohara, Takamatsu, Kagawa 761-0123
                     <br/>
                     Phone: 0877777777
                   </p>
@@ -82,30 +156,27 @@
                 </div>
             </div>
     
-        <!--<div class="col-4 d-flex align-self-stretch">-->
             <div class="card" >
-                <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" alt="Card image cap">
+                <img class="card-img-top" src="assets/img/center-church.png" alt="Christian Center">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Christian Center</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 10:00</h6>
-                    <p class="card-text">2-chome-５-15 Tokiwacho, Takamatsu, Kagawa 760-0054
+                    <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 11:00</h6>
+                    <p class="card-text">2-chome-5-15 Tokiwacho, Takamatsu, Kagawa 760-0054
                         <br/>
                         Phone: 0878342870
                     </p>
                     
                     <div class="mt-auto">
-                        <a href="https://www.google.com/maps/place/Takamatsu+Christian+Center/@34.33731,134.0518821,17z/data=!3m1!4b1!4m6!3m5!1s0x3553eb996b194685:0x51281e66257f65d5!8m2!3d34.33731!4d134.0518821!16s%2Fg%2F11s1xhw9x7" class="btn btn-primary">Learn more</a>
+                        <a href="https://goo.gl/maps/ErcUk4JPFZZiXDvq7" class="btn btn-primary">Learn more</a>
                     </div>
                 </div>
             </div>
-        
-        <!--<div class="col-4 d-flex align-self-stretch">-->
-        
+                
             <div class="card" >
-                <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" alt="Card image cap">
+                <img class="card-img-top" src="assets/img/seto-uchi-chapel.png" alt="Card image cap">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Setouchi Chapel</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 9:00</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 10:00</h6>
                     <p class="card-text">20-15 Setouchicho, Takamatsu, Kagawa 760-0012
                         <br/>
                         Phone: 0878359189
@@ -116,12 +187,9 @@
                     </div>
                 </div>
             </div>
-        
-
-        <!--<div class="col-4 d-flex align-self-stretch">-->
-            
+                    
             <div class="card" >
-                <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" alt="Card image cap">
+                <img class="card-img-top" src="assets/img/ayagawa.png" alt="Card image cap">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Ayagawa Christ Church</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Sunday worship starts at 10:00</h6>
@@ -130,13 +198,17 @@
                         Phone: 0878770433
                     </p>
                     
-                    <li class="list-inline-item"><span class="fa-stack fa-lg"><a href="https://www.facebook.com/AyagawaChristChurch/"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a></span></li>
+                    <li class="list-inline-item"><span class="fa-stack fa-lg"><a href="https://www.facebook.com/AyagawaChristChurch"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a></span></li>
                     <div class="mt-auto">
                         <a href="https://maps.app.goo.gl/GnxAoGavyQ9kjysC6" class="btn btn-primary">Learn more</a>
                     </div>
                 </div>
             </div>
+        -->
+
         </div>
+
+
         <hr/>
     </div>
 
