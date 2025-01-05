@@ -150,7 +150,7 @@
       <div class="col-md-10 col-lg-8 mx-auto">
         <div class="site-heading tcc-site-heading-left">
           <h2>お問合せ</h2>
-          <span class="subheading">「「求めなさい。そうすれば受けます。」ヨハネ16:24</span>
+          <span class="subheading">「求めなさい。そうすれば受けます。」ヨハネ16:24</span>
         </div>
       </div>
     </div>
@@ -176,15 +176,9 @@
     <input type="hidden" name="orgid" value="00DB0000000Xvxj" />
     <input type="hidden" name="retURL" value="https://tccsite.github.io/" />
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail" value="iandrosov73@gmail.com">   -->
-    <!--  ----------------------------------------------------------------------  -->
     <h3>連絡先</h3>
     <div class="form-group">
-      <label for="name">氏名</label>
+      <label for="name" class="required">氏名</label>
       <input
         id="name"
         maxlength="80"
@@ -192,10 +186,11 @@
         size="20"
         type="text"
         class="form-control"
+        required
       />
     </div>
     <div class="form-group">
-      <label for="email">電子メール</label>
+      <label for="email" class="required">電子メール</label>
       <input
         id="email"
         maxlength="80"
@@ -203,13 +198,14 @@
         size="20"
         type="text"
         class="form-control"
+        required
       />
       <small id="emailHelp" class="form-text text-muted">
         電子メールを他の人に教えることはありません。
       </small>
     </div>
     <div class="form-group">
-      <label for="subject">主題</label>
+      <label for="subject" class="required">主題</label>
       <input
         id="subject"
         maxlength="80"
@@ -217,15 +213,15 @@
         size="20"
         type="text"
         class="form-control"
+        required
       /><br />
     </div>
     <div class="form-group">
-      <label for="description">メッセージ</label>
-      <textarea name="description" class="form-control"></textarea><br />
+      <label for="description" class="required">メッセージ</label>
+      <textarea name="description" class="form-control" required></textarea><br />
     </div>
     <input type="hidden" id="external" name="external" value="1" /><br />
 
-    <!--<input type="submit" name="submit">-->
     <button type="submit" class="btn btn-primary">送信</button>
   </form>
 </div>
@@ -239,7 +235,7 @@
             <ul class="list-inline text-center">
               <li class="list-inline-item">
                 <span class="fa-stack fa-lg"
-                  ><a href="https://www.youtube.com/@kenjipatacsil27/videos"
+                  ><a href="https://www.youtube.com/@TakamatsucommunityChurch/videos"
                     ><i class="fa fa-circle fa-stack-2x"></i
                     ><i class="fa fa-youtube fa-stack-1x fa-inverse"></i></a
                 ></span>

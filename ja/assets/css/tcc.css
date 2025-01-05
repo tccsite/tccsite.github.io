@@ -105,3 +105,8 @@ https://github.com/silviomoreto/bootstrap-select/issues/1135
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
   display: inline !important;
 }
+
+.required:after {
+  content:" *";
+  color: red;
+}
